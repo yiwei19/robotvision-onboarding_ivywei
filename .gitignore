@@ -1,3 +1,10 @@
+# Data and Training
+*.zip
+*.jpg
+src/datasets/*
+src/runs/*
+*.pt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -46,7 +53,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
+# *.py,cover
 .hypothesis/
 .pytest_cache/
 cover/
