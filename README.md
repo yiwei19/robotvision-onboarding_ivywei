@@ -2,36 +2,29 @@
 
 Note: These tasks aren't intended to take too long. Do as good of a job as you think you are capable of with your own brain, a search engine, and the time you have available. 
 
-## Task 1: Use A Pre-Trained Model and Example Code
-In the `src` folder, a script called `ultralytics_train.py` has been provided for you. Check out what this file does and what Ultralytics is doing behind the scenes. Run the script (you don't have to run it for many epochs, just get a trained model). Document what you did to get it to work, and provide a brief description of what this code is really doing (take a look at some documentation!). Finally, write a simple script to run the trained model on a user-provided input, and show it works. 
+## Task 1: Download a Dataset and Visualize It
+The first task is pretty open-ended, but with a clear goal at the end.
 
-## Task 2: Adapt to a Different Dataset
-You'll notice that in the previous example, the dataset was automatically downloaded, and the model architecture was already defined. Now, you will adapt a new dataset to the COCO format and train a new model. Use whichever framework you are most comfortable with.
+1. Go to the [nuScenes](https://www.nuscenes.org/nuscenes#download) website, and make an account. Download the "Mini" dataset (it should have a size of 3.88 GB). You are welcome to do this on your own computer, but it would be better if you did this in Colab or some other remote computing setup. Note it will take a while to download and unzip this dataset.
 
-This step is quite open-ended. First, choose a drone imagery dataset. I've provided a few here but if you can find a nice dataset of urban aerial images, go ahead and use it. 
+2. Write a script to visualize this data in an interesting way. The [nuScenes devkit](https://github.com/nutonomy/nuscenes-devkit.git) has code on interfacing with the dataset and accessing data, as well as some tutorials. 
+ - Consider the different sensors and annotations available to you. How could you present this information to make it greater than the sum of its parts?
 
-[UrbanLF](https://github.com/HAWKEYE-Group/UrbanLF/tree/master)
+3. To ensure you didn't vibe code this solution, please include a link to a video in which you step through the code and demonstrate your visualization. The video shouldn't be longer than 4 minutes.
 
-[UrbanScene3D](https://github.com/yilinliu77/UrbanScene3D)
+## Task 2: Short Response Question
+Now that you have explored a real robotics dataset, I want to better understand your creativity. **Without Googling/asking an LLM** explain how you would design a system that tries to take sensor data as an input and has to steer the car as the output. Some things to consider: 
+ - What should the output of the system be? (There are many right answers)
+ - What inputs are most/least useful, and why? 
+ - Take a step back and forget about neural networks and ML. What would your answer be without these? (These tend to be the best solutions.)
+ 
+Please note that it's really obvious when you are consulting an outside source. I care about your own thought process, not you repeating back information I could also search for.s
 
-[Urban Classification](https://www.kaggle.com/datasets/fxmikf/aerial-drone-urban-classification)
-
-[Varied Drone Dataset](https://github.com/RussRobin/VDD)
-
-[Semantic Drone Dataset](https://www.kaggle.com/datasets/awsaf49/semantic-drone-dataset/data)
-
-These are the kinds of datasets we will be working with, and working to synthetically augment, in this project team. Note some of these are semantic segmentation, others are classification. 
-
-Next, you will process this dataset, and possibly change the train script, so that you can train a model given the format of the annotations and/or labels that it comes with. It's OK if you change the original YOLO to a semantic segmentation or classification model. **Keep in mind the main point of this exercise is data engineering + being a resourceful programmer, not getting perfect results!**
-
-If you are able to train a model on the dataset you chose, good job! If not, it's OK. Your resourcefulness is what I want to see.
 
 ## Deliverable
-You need to submit a short (at *most* two pages including pictures and/or code) write-up contaning:
-- What you tried to do
-- Challenges you faced and how you fixed them
-- Results from your work
-- Explanation of what you did
-- A link to your fork of this repository. 
+Compile the following information together for your deliverable:
+- Link to your video for step 1
+- Link to you code for step 1 (please fork this repository and work from there.)
+- Your answer to the short response question for step 2 (no more than a paragraph or two, with a diagram)
 
 If you have any questions, please DM `@mgagv` on Discord. Start your message with "ML@P". 
