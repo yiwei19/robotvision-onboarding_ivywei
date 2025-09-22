@@ -18,7 +18,7 @@ Now that you have explored a real robotics dataset, I want to better understand 
  - What inputs are most/least useful, and why? 
  - Take a step back and forget about neural networks and ML. What would your answer be without these? (These tend to be the best solutions.)
  
-Please note that it's really obvious when you are consulting an outside source. I care about your own thought process, not you repeating back information I could also search for.s
+Please note that it's really obvious when you are consulting an outside source. I care about your own thought process, not you repeating back information I could also search for.
 
 
 ## Deliverable
